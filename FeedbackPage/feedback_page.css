@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  background: rgb(25, 25, 25);
+  height: 300px;
+}
+.left {
+  width: 27%;
+  background: rgb(25, 25, 25);
+  height: 500px;
+  float: left;
+}
+.feedback_mainpage {
+  width: 42%;
+  /*padding-left: 4%;*/
+  height: 520px;
+  /*padding: 20px 20px 20px 20px;*/
+  font-family: "Raleway", sans-serif;
+  /*font-family: "Satisfy", cursive;*/
+  color: floralwhite;
+  font-weight: lighter;
+  background-color: rgb(20, 20, 20);
+  /*background-color: yellow;*/
+  float: left;
+ /* border: 1px solid white;*/
+}
+.feedback_mainpage_inner {
+  width: 99.7%;
+  padding-left:30px;
+  padding-top:30px;
+  padding-right:30px;
+  padding-bottom:30px;
+  height: 516px;
+  /*padding: 20px 20px 20px 20px;*/
+  font-family: "Raleway", sans-serif;
+  /*font-family: "Satisfy", cursive;*/
+  color: floralwhite;
+  font-weight: lighter;
+
+  background-color: rgb(20, 20, 20);
+  /*background-color: green;*/
+
+  /*background-color: greenyellow;*/
+  margin:30px 30px 30px 30px;
+  float: left;
+  border: 1px solid white;
+}
+
+.feedback_mainpage_inner {
+  /*background-color: rgb(20, 20, 20); */
+  margin: 1px;
+}
+.inner_context{
+  margin:1px 50px 1px 100px;
+  padding-left:30px;
+  background-color: rgb(20, 20, 20);
+  /*background-color: red;*/
+
+}
+.right {
+  width: 27%;
+  height: 500px;
+  background: rgb(25, 25, 25);
+  float: left;
+}
+
+.table3 td {
+  text-align: center;
+}
+span {
+  font-weight: lighter;
+}
+
+
+#table1 {
+  width: 200px;
+}
+#table3 {
+  width: 200px;
+}
+
+#table2 #email {
+  width: 340px;
+}
+#table2 #phone {
+  width: 340px;
+}
+#table2 textarea {
+  width: 340px;
+}
+
+.bottom {
+  height: 200px;
+  width: 100%;
+  background: rgb(25, 25, 25);
+  float: left;
+}
+
+/* added by FG + changed background colors above */
+html {
+  background-color: rgb(25, 25, 25);
+}
+
+#backbutton {
+  background-color: rgb(20, 20, 20);
+  border: none;
+}
+
+body {
+  /* hide horizontal scrollbar */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- */
+/* header styling */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+  width: 100vw;
+  text-align: center;
+  padding: 1.5em 0em;
+  /* if 'padding' is given two values, it applies the first to padding-top/bottom and the second to padding on the right and left */
+  background-color: rgb(20, 20, 20);
+  border-bottom: 1px solid white;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+header h1,
+header a {
+  background-color: rgb(20, 20, 20);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+}
+
+.headerSmall {
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.headerSmall:hover {
+  text-decoration: underline;
+}
+
+#headerBig {
+  font-size: 3em;
+  font-family: "Satisfy", cursive;
+  margin: 0;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* ----------------------------------------- */

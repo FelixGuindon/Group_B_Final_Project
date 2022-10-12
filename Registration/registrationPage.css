@@ -1,0 +1,128 @@
+/* styling for entire page */
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: "Raleway", sans-serif; /* imported font */
+}
+
+/* hide side scrolling */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- */
+/* header styling */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+  width: 100vw;
+  text-align: center;
+  padding: 1.5em 0em;
+  /* if 'padding' is given two values, it applies the first to padding-top/bottom and the second to padding on the right and left */
+  background-color: rgb(20, 20, 20);
+  border-bottom: 1px solid white;
+}
+
+header h1,
+header a {
+  background-color: rgb(20, 20, 20);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.headerSmall {
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.headerSmall:hover {
+  text-decoration: underline;
+}
+
+#headerBig {
+  font-size: 3em;
+  font-family: "Satisfy", cursive;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+input {
+  background-color: white;
+  color: black;
+  margin-right: 30px;
+}
+
+
+table {
+  margin: auto;
+  width: 450px;
+}
+
+#user-subscript,
+#password-subscript,
+#phone-number-subscript {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+td {
+  padding-bottom: 30px;
+}
+
+#youtube-id,
+#influencer-id,
+#other-id {
+  margin: 0 10px 0 30px;
+}
+
+#form-button,
+#form-button a {
+  border: none;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 50px;
+  font-weight: bolder;
+}
+
+textarea {
+  width: 545px;
+  height: 130px;
+  resize: none;
+}
+
+.lower-area {
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+/* ----------- AUTH PAGE CSS ----------- */
+
+#authentication-area {
+  text-align: center;
+  font-size: 32px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#message {
+  margin-bottom: 30px;
+}
+
+#message-subscript {
+  color: #8c8c8c;
+}

@@ -1,0 +1,141 @@
+/* styling for entire page */
+* {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(25, 25, 25);
+  color: white;
+  font-family: "Raleway", sans-serif; /* imported font */
+}
+
+/* hide side scrolling */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ------------------------------- */
+/* header styling */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr 1fr 1fr;
+  width: 100vw;
+  text-align: center;
+  padding: 1.5em 0em;
+  /* if 'padding' is given two values, it applies the first to padding-top/bottom and the second to padding on the right and left */
+  background-color: rgb(20, 20, 20);
+  border-bottom: 1px solid white;
+}
+
+header h1,
+header a {
+  background-color: rgb(20, 20, 20);
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.headerSmall {
+  font-size: 1.5em;
+  align-self: center;
+}
+
+.headerSmall:hover {
+  text-decoration: underline;
+}
+
+#headerBig {
+  font-size: 3em;
+  font-family: "Satisfy", cursive;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* MAIN STYLING */
+
+main {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+img {
+  width: 50vw;
+}
+
+main div {
+  text-align: center;
+  align-self: center;
+  margin-bottom: 6em;
+}
+
+#recipeTitle {
+  font-weight: 700;
+  font-size: 3em;
+}
+
+div p {
+  font-size: 16px;
+}
+
+/* ------------------------------- */
+/* BODY STYLING */
+
+#body {
+  display: grid;
+  width: 900px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+#body h1 {
+  border-bottom: 1px solid white;
+  margin: 60px 0 30px 0;
+  padding-bottom: 10px;
+}
+
+#introText {
+  line-height: 2em;
+}
+
+#ingredients {
+  line-height: 3em;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+}
+
+#changeBTN {
+  padding: 4px 6px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
+  font-weight: bolder;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+#changeBTN:hover {
+  border: 1px solid white;
+}
+
+#portionValue {
+  width: 60px;
+}
+
+.portionSize {
+  color: rgb(140, 140, 140);
+  margin-top: 40px;
+}
+
+form input {
+  font-size: 16px;
+}
+
+form label {
+  margin-right: 10px;
+}

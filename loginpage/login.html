@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<htmal>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <script defer>
+      function login() {
+        if (
+          document.getElementById("username").value == "Admin" &&
+          document.getElementById("password").value == "12345"
+        ) {
+          window.location.replace("../Recipe_Homepage/recipe_homepage.html");
+        } else {
+          alert("wrong name and password");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- HEADER ADDED BY FG -->
+    <header class="sticky">
+      <a href="../loginpage/login.html" class="headerSmall">Log In</a>
+      <a href="../Registration/registrationpage.html" class="headerSmall"
+        >Register</a
+      >
+      <h1 id="headerBig">Site Name</h1>
+      <a href="../Recipe_Homepage/recipe_homepage.html" class="headerSmall"
+        >Recipes</a
+      >
+      <a href="../FeedbackPage/feedback_page.html" class="headerSmall"
+        >Feedback</a
+      >
+    </header>
+    <!-- HEADER ENDS HERE -->
+    <main>
+      <div class="login">
+        <fieldset>
+          <p>Username : <input type="text" id="username" /></p>
+          <p>Password : <input type="password" id="password" /></p>
+          <p>
+            <input type="button" id="login" value="login" onclick="login()" />
+          </p>
+        </fieldset>
+      </div>
+    </main>
+  </body>
+</htmal>

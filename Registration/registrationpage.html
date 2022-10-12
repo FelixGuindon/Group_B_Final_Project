@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Registration Page</title>
+
+        <link rel="stylesheet" href="registrationPage.css">
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Satisfy&display=swap"rel="stylesheet"/>
+    </head>
+
+    <body>
+    <!-- HEADER ADDED BY FG -->
+    <header class="sticky">
+      <a href="../loginpage/login.html" class="headerSmall">Log In</a>
+      <a href="../Registration/registrationpage.html" class="headerSmall"
+        >Register</a
+      >
+      <h1 id="headerBig">Site Name</h1>
+      <a href="../Recipe_Homepage/recipe_homepage.html" class="headerSmall"
+        >Recipes</a
+      >
+      <a href="../FeedbackPage/feedback_page.html" class="headerSmall"
+        >Feedback</a
+      >
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+        <div style="margin-top: 150px"></div>
+
+        <form method="post" onsubmit="verifyInfo()">
+            <table>
+                <tr>
+                    <td>
+                        Username: 
+                    </td>
+                    <td>
+                        <input type="text" id="user-id">
+                    </td>
+                    <td id="user-subscript">
+                        Please use a username with a maximum of 8 characters.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password:
+                    </td>
+                    <td>
+                        <input type="password" id="password-id">
+                    </td>
+                    <td id="password-subscript">
+                        Please use a password with a minimum of 4 characters.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone Number: 
+                    </td>
+                    <td>
+                        <input type="number" id="phone-number-id">
+                    </td>
+                    <td id="phone-number-subscript">Do not include characters other than digits.</td>
+                </tr>
+                <tr>
+                    <td>
+                        Date of Birth 
+                    </td>
+                    <td>
+                        <input type="date" id="dob-id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail: 
+                    </td>
+                    <td>
+                        <input type="email" id="email-id">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        How did you find us?
+                    </td>
+                    <td>
+                        <input type="radio" id="youtube-id" name="radio-id" value="YouTube">
+                        <label for="youtube-id">YouTube</label><br>
+                        <input type="radio" id="influencer-id" name="radio-id" value="Influencer(s)">
+                        <label for="influencer-id">Influencer(s)</label><br>
+                        <input type="radio" id="other-id" name="radio-id" value="Other" onclick="textareaEnable(); textareaDisable()">
+                        <label for="other-id">Other</label><br>
+                    </td>
+                </tr>
+            </table>
+            <div class="lower-area">
+                <textarea id="other-textarea" name="radio-id-text" maxlength="125" disabled></textarea> <br>
+                <button id="form-button"><a href="authenticationpage.html">Register</button></a>
+            </div>
+        </form>
+
+        <script src="registrationpage.js"></script>
+    </body>
+</html>

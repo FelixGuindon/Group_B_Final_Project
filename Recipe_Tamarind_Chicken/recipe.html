@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="recipe.css" />
+    <script src="recipe.js" defer></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER ADDED BY FG -->
+    <header class="sticky">
+      <a href="../loginpage/login.html" class="headerSmall">Log In</a>
+      <a href="../Registration/registrationpage.html" class="headerSmall"
+        >Register</a
+      >
+      <h1 id="headerBig">Site Name</h1>
+      <a href="../Recipe_Homepage/recipe_homepage.html" class="headerSmall"
+        >Recipes</a
+      >
+      <a href="../FeedbackPage/feedback_page.html" class="headerSmall"
+        >Feedback</a
+      >
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+    <main>
+      <div>
+        <h1 id="recipeTitle">Tamarind Chicken</h1>
+        <p>BY JOHN DOE</p>
+        <p>October 5, 2022</p>
+      </div>
+      <img src="img/tamarindChicken.jpg" alt="" />
+    </main>
+
+    <div id="body">
+      <p id="introText">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ad
+        eveniet, exercitationem ratione autem sed est aliquam cumque debitis et,
+        dolor quae nam quidem itaque suscipit voluptatem quo repellat qui
+        reiciendis earum aspernatur impedit rerum veritatis? Veritatis expedita
+        ad necessitatibus dolorem beatae, aperiam porro? Minus blanditiis rem
+        pariatur et animi dolor repellendus! Non dolor ipsum cumque dolorem
+        minus! Quod inventore illo sed aliquam aut asperiores ipsam eaque atque
+        mollitia, dignissimos dolorem magni sit corrupti? Voluptate, fugit
+        veritatis, enim nesciunt blanditiis eligendi fugiat quo recusandae
+        voluptatem quidem pariatur iusto quasi quod expedita eos consequatur ea
+        accusantium maxime deserunt id. Animi harum dolore culpa? Dolore ad illo
+        voluptatum officiis expedita quasi quidem accusamus natus, corrupti
+        temporibus neque aliquid aut dolor inventore. Vel, non, incidunt ad
+        pariatur laudantium nam sunt quibusdam tempora deleniti provident iure
+        modi porro consequuntur. Sequi, ab sint. Dolores praesentium ab dolor.
+        Consequuntur, repudiandae impedit perspiciatis aliquid soluta animi
+        libero cumque dignissimos aliquam quae. Quidem neque tempora labore unde
+        minima error fugit quae officia voluptatum, commodi quisquam corrupti
+        amet vel facere aliquam rem dolores explicabo hic asperiores velit
+        accusamus. Iure quisquam exercitationem, est sapiente ad natus voluptate
+        neque praesentium laborum alias fugiat, labore commodi suscipit vero
+        libero dolor modi maiores?
+      </p>
+      <h1>Ingredients</h1>
+
+      <div id="ingredients">
+        <p id="ingredient1Value">2</p>
+        <p>Tbsp. cumin seeds</p>
+        <p id="ingredient2Value">0.5</p>
+        <p>cup extra-virgin olive oil</p>
+        <p id="ingredient3Value">3</p>
+        <p>large shallots, thinly sliced</p>
+        <p id="ingredient4Value">2</p>
+        <p>Tbsp. double-concentrated tomato paste</p>
+        <p id="ingredient5Value">1</p>
+        <p>Tbsp. smoked paprika</p>
+        <p id="ingredient6Value">1</p>
+        <p>tsp. crushed red pepper flakes</p>
+        <p id="ingredient7Value">1</p>
+        <p>lb. ground lamb</p>
+        <p id="ingredient8Value">1</p>
+        <p>lb. pappardelle</p>
+        <p class="portionSize" id="portionSizeValue">1</p>
+        <p class="portionSize">Portion Size</p>
+      </div>
+      <form action="#">
+        <label for="">Change Portion Size: </label>
+        <input type="number" id="portionValue" />
+        <input
+          type="button"
+          value="CHANGE"
+          onclick="calcPortion()"
+          id="changeBTN"
+        />
+      </form>
+      <h1>Directions</h1>
+      <p>
+        <b>Step 1</b><br />
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam quasi
+        blanditiis facilis officia magni molestiae animi fugiat distinctio.
+        Quidem, minus? Dignissimos iusto porro suscipit obcaecati sapiente
+        officiis laboriosam quo atque fugiat accusantium voluptatum, non esse
+        aliquid ipsum neque veritatis, iure animi molestias debitis reiciendis
+        unde qui, in molestiae! Deserunt, sunt. <br /><br /><br />
+        <b>Step 2</b><br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto eos
+        culpa, corporis totam quam natus similique? Modi dolor hic assumenda
+        accusantium ratione obcaecati sed quia aspernatur. Delectus quae ea
+        aliquid? <br /><br /><br />
+        <b>Step 3</b><br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero unde
+        error, consequatur nam adipisci incidunt voluptatibus eius illo expedita
+        omnis.<br /><br /><br />
+        <b>Step 4</b><br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+        voluptates corrupti totam voluptas aliquid autem sit quasi dolorum
+        veniam libero dolores inventore cupiditate distinctio. Accusamus
+        cupiditate ad excepturi, ut quos vitae alias blanditiis praesentium
+        maxime? Hic, ut animi et nam, officia laudantium distinctio sapiente,
+        beatae atque blanditiis vero. Libero, autem.<br /><br /><br />
+      </p>
+    </div>
+  </body>
+</html>
